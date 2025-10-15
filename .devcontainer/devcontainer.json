@@ -8,6 +8,7 @@
   "service": "workspace",
   "workspaceFolder": "/workspace/anubis",
   "postStartCommand": "bash ./.devcontainer/poststart.sh",
+  "postCreateCommand": "sudo chown -R vscode:vscode /workspace/anubis /home/vscode/.local/share/atuin",
   "features": {
     "ghcr.io/xe/devcontainer-features/ko:1.1.0": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
