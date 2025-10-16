@@ -16,6 +16,7 @@ templ base(title string, body templ.Component, impressum *config.Impressum, chal
 			<link rel="stylesheet" href={ anubis.BasePrefix + xess.URL }/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta name="robots" content="noindex,nofollow"/>
+			<link rel="shortcut icon" type="image/x-icon" href="https://drewdomi.com/favicon.ico" />
 			for key, value := range ogTags {
 				<meta property={ key } content={ value }/>
 			}
@@ -47,11 +48,11 @@ templ base(title string, body templ.Component, impressum *config.Impressum, chal
           overflow: hidden;
           margin: 1rem 0 2rem;
 					outline-offset: 2px;
-					outline: #b16286 solid 4px;
+					outline: #59c8ff solid 4px;
 				}
 
         .bar-inner {
-            background-color: #b16286;
+            background-color: #59c8ff;
             height: 100%;
             width: 0;
             transition: width 0.25s ease-in;
@@ -68,12 +69,6 @@ templ base(title string, body templ.Component, impressum *config.Impressum, chal
 				@body
 				<footer>
 					<div class="centered-div">
-						<p>
-							{ localizer.T("protected_by") } <a href="https://github.com/TecharoHQ/anubis">Anubis</a> { localizer.T("protected_from") } <a
-	href="https://techaro.lol"
->Techaro</a>. { localizer.T("made_with") }.
-						</p>
-						<p>{ localizer.T("mascot_design") } <a href="https://bsky.app/profile/celphase.bsky.social">{ localizer.T("celphase") }</a>.</p>
 						if impressum != nil {
 							<p>
 								@templ.Raw(impressum.Footer)

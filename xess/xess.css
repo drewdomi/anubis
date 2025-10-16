@@ -1,52 +1,33 @@
-:root {
-  --body-sans-font: Geist, sans-serif;
-  --body-preformatted-font: Iosevka Curly Iaso, monospace;
-  --body-title-font: Podkova, serif;
+@import url('./static/fonts/roboto/roboto.css');
+@import url('./static/fonts/rubik/rubik.css');
+@import url('./static/fonts/jetbrains-mono/jetbrains-mono.css');
 
-  --background: #1d2021;
-  --text: #f9f5d7;
-  --text-selection: #d3869b;
+:root {
+  --body-sans-font: "Roboto", sans-serif;
+  --body-preformatted-font: "JetBrains Mono", monospace;
+  --body-title-font: "Rubik", serif;
+
+  --background: #2b2b2b;
+  --text: #efefef;
+  --text-selection: #1c72c4;
   --preformatted-background: #3c3836;
-  --link-foreground: #b16286;
+  --link-foreground: #59c8ff;
   --link-background: #282828;
   --blockquote-border-left: 1px solid #bdae93;
 
-  --progress-bar-outline: #b16286 solid 4px;
-  --progress-bar-fill: #b16286;
+  --progress-bar-outline: #59c8ff solid 4px;
+  --progress-bar-fill: #59c8ff;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #f9f5d7;
-    --text: #1d2021;
-    --text-selection: #d3869b;
+    --background: #efefef;
+    --text: #2b2b2b;
+    --text-selection: #1c72c4;
     --preformatted-background: #ebdbb2;
-    --link-foreground: #b16286;
+    --link-foreground: #59c8ff;
     --link-background: #fbf1c7;
     --blockquote-border-left: 1px solid #655c54;
   }
-}
-
-@font-face {
-  font-family: "Geist";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("./static/geist.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Podkova";
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url("./static/podkova.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Iosevka Curly";
-  font-style: monospace;
-  font-display: swap;
-  src: url("./static/iosevka-curly.woff2") format("woff2");
 }
 
 main {

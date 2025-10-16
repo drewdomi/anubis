@@ -15,6 +15,7 @@ templ page(localizer *localization.SimpleLocalizer) {
 			<div class="bar-inner"></div>
 		</div>
 		<details>
+			<summary>{ localizer.T("details") }:</summary>
 			if anubis.UseSimplifiedExplanation {
 				<p>
 					{ localizer.T("simplified_explanation") }

@@ -6,6 +6,7 @@
     "unifiedjs.vscode-mdx",
     "a-h.templ",
     "redhat.vscode-yaml",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml"
   ]
 }
